@@ -6207,11 +6207,11 @@ namespace RuaSeguraApp
 			// aapt resource value: 0x7F080055
 			public const int application_name = 2131230805;
 			
-			// aapt resource value: 0x7F080002
-			public const int APP_NAME = 2131230722;
-			
 			// aapt resource value: 0x7F080054
 			public const int app_name = 2131230804;
+			
+			// aapt resource value: 0x7F080002
+			public const int APP_NAME = 2131230722;
 			
 			// aapt resource value: 0x7F080056
 			public const int arc = 2131230806;
