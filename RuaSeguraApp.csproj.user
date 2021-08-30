@@ -3,7 +3,7 @@
   <PropertyGroup>
     <SelectedDevice>Android Emulator</SelectedDevice>
     <ActiveDebugProfile>Android Emulator</ActiveDebugProfile>
-    <DefaultDevice>nexus_5x_q_10_0_-_api_29</DefaultDevice>
+    <DefaultDevice>nexus_5x_r_11_0_-_api_30</DefaultDevice>
     <AndroidDesignerPreferredTheme>AppTheme</AndroidDesignerPreferredTheme>
     <AndroidDesignerPreferredDevice>Nexus 5</AndroidDesignerPreferredDevice>
   </PropertyGroup>
