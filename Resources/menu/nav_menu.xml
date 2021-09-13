@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--For all properties see: https://aka.ms/android-menu-resource-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+  
+ 
+  <group android:checkableBehavior="single">
+
+    <item
+      android:id="@+id/navMeuPerfil"
+      android:title="Meu Perfil"
+      android:icon="@mipmap/ic_meuPerfil_action"
+    />
+
+    <item
+      android:id="@+id/navHistoricoDeRotas"
+      android:title="Histórico de Rotas"
+      android:icon="@mipmap/ic_histRotas_action"
+    />
+
+    <item
+      android:id="@+id/navMeusRegistros"
+      android:title="Meus Registros"
+      android:icon="@mipmap/ic_meusRegistros_action"
+    />
+
+    <item
+      android:id="@+id/navConfiguracoes"
+      android:title="Configurações"
+      android:icon="@mipmap/ic_configuracao_action"
+    />
+
+    <item
+      android:id="@+id/navAjuda"
+      android:title="Ajuda"
+      android:icon="@mipmap/ic_ajuda_action"
+    />
+
+    <item
+      android:id="@+id/navSobre"
+      android:title="Sobre"
+      android:icon="@mipmap/ic_sobre_action"
+    />
+
+  </group>
+ 
+</menu>
