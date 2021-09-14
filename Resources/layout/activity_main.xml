@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:id="@+id/drawerLayout">
+    android:id="@+id/drawerLayout"
+    android:fitsSystemWindows="true">
     
     <LinearLayout
         android:orientation="vertical"
@@ -22,6 +23,8 @@
         android:background="@color/colorPrimaryLight"
         android:layout_gravity="start"
         app:headerLayout="@layout/headerLayout"
+        app:menu="@menu/nav_menu"
+        app:theme="@style/AppTheme"
         />
     
         
