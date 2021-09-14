@@ -23,7 +23,7 @@ namespace RuaSeguraApp
             Finish();
 
             // Disable activity slide-in animation
-            //OverridePendingTransition(0, 0);
+            //OverridePendingTransition(0, 0);;
         }
     }
 }

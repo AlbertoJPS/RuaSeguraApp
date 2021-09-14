@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\RuaSeguraApp\\RuaSeguraApp.csproj": {}
+    "H:\\RuaSeguraApp\\RuaSeguraApp.csproj": {}
   },
   "projects": {
-    "C:\\RuaSeguraApp\\RuaSeguraApp.csproj": {
+    "H:\\RuaSeguraApp\\RuaSeguraApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\RuaSeguraApp\\RuaSeguraApp.csproj",
+        "projectUniqueName": "H:\\RuaSeguraApp\\RuaSeguraApp.csproj",
         "projectName": "RuaSeguraApp",
-        "projectPath": "C:\\RuaSeguraApp\\RuaSeguraApp.csproj",
-        "packagesPath": "C:\\Users\\alber\\.nuget\\packages\\",
-        "outputPath": "C:\\RuaSeguraApp\\obj\\",
+        "projectPath": "H:\\RuaSeguraApp\\RuaSeguraApp.csproj",
+        "packagesPath": "C:\\Users\\alberto.santos2\\.nuget\\packages\\",
+        "outputPath": "H:\\RuaSeguraApp\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -19,7 +19,7 @@
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\alber\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\alberto.santos2\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
