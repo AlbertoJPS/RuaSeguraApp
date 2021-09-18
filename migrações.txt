@@ -1,0 +1,11 @@
+
+Mapeamentos de artefatos 
+
+https://developer.android.com/jetpack/androidx/migrate/artifact-mappings
+
+
+
+
+Mapeamentos de classes 
+
+https://developer.android.com/jetpack/androidx/migrate/class-mappings

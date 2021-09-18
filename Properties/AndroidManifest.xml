@@ -3,8 +3,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           android:versionCode="1"
           android:versionName="1.0"
-          package="com.companyname.ruaseguraapp">
+          package="com.companyname.ruaseguraapp"
+          >
   <uses-sdk android:minSdkVersion="24" android:targetSdkVersion="30" />
+
+
 
     <application android:allowBackup="true"
     android:icon="@mipmap/ic_launcher"
@@ -15,19 +18,10 @@
 
     <uses-library android:name="org.apache.http.legacy" 
     android:required="false"/>
-    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyAfEjd2ccALwUjTDatA1SXHJgE5mkqSKNU"/>
+     
+    <meta-data android:name="com.google.android.maps.v2.API_KEY" 
+               android:value="AIzaSyAfEjd2ccALwUjTDatA1SXHJgE5mkqSKNU"/>
 
-      <!--<provider
-         android:name="android.support.v4.content.FileProvider"
-         android:authorities="${applicationId}.provider"
-         android:exported="false"
-         android:grantUriPermissions="true">
-        <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
-        
-      </provider>-->
-      
-      
-      
   </application>
 
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -47,3 +41,12 @@
         android:name="android.support.FILE_PROVIDER_PATHS"
         android:resource="@xml/file_paths"/>
     </provider>-->
+
+<!--<provider
+         android:name="android.support.v4.content.FileProvider"
+         android:authorities="${applicationId}.provider"
+         android:exported="false"
+         android:grantUriPermissions="true">
+        <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        
+      </provider>-->
