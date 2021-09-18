@@ -1,3 +1,37 @@
 Android.Util.AndroidRuntimeException
   Message=Activity {com.companyname.ruaseguraapp/crc6415c3baa45cd4838c.SplashActivity} 
 did not call through to super.onCreate()
+
+
+
+using AndroidX.AppCompat.App;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RuaSeguraApp
+{
+    [Activity(Label = "@string/app_name", Icon = "@mipmap/ic_launcher", Theme = "@style/MyTheme.Splash", NoHistory = true)]
+    public class SplashActivity : AppCompatActivity
+    {
+        protected override void OnCreate(Bundle savedInstanceState)
+        {
+            //base.OnCreate(savedInstanceState);
+        }
+
+        protected override async void OnResume()
+        {
+            base.OnResume();
+            await SimulateStart();
+        }
+
+
+        async Task SimulateStart()
+        {
+            await Task.Delay(TimeSpan.FromSeconds(5));
+            StartActivity(new Intent(Application.Context, typeof(MainActivity)));
+        }
+    }
+}
