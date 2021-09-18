@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#649ff7</color>
-    <color name="colorPrimaryDark">#2B538F</color>
-    <color name="colorPrimaryLight">#EBF4FF</color>
-    <color name="colorAccent">#E7E512</color>
-    <color name="colorAsh">#E7E513</color>
+    <color name="colorPrimary">#639ff7</color>
+    <color name="colorPrimaryDark">#2B5390</color>
+    <color name="colorPrimaryLight">#ECF4FF</color>
+    <color name="colorAccent">#E7E612</color>
+    <color name="attentionLight">#E7E612</color>
+    <color name="attentionMiddle">#D67B2C</color>
+    <color name="attentionDark">#502100</color>
+    <color name="registerNumber">#C50021</color>
+    <color name="ic_launcher_background">#639ff7</color>
 </resources>
