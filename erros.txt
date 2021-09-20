@@ -1,3 +1,0 @@
-Android.Util.AndroidRuntimeException
-  Message=Activity {com.companyname.ruaseguraapp/crc6415c3baa45cd4838c.SplashActivity} 
-did not call through to super.onCreate()

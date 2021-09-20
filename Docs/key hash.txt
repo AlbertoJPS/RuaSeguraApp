@@ -1,0 +1,32 @@
+Microsoft Windows [versão 10.0.19042.1165]
+(c) Microsoft Corporation. Todos os direitos reservados.
+
+C:\Program Files\Java\jdk1.8.0_301\bin>keytool.exe -list -v -keystore "%LocalAppData%\Xamarin\Mono for Android\debug.keystore" -alias androiddebugkey -storepass android -keypass android
+Nome do alias: androiddebugkey
+Data de criação: 14/08/2021
+Tipo de entrada: PrivateKeyEntry
+Comprimento da cadeia de certificados: 1
+Certificado[1]:
+Proprietário: CN=Android Debug, O=Android, C=US
+Emissor: CN=Android Debug, O=Android, C=US
+Número de série: 7a941626
+Válido de: Sat Aug 14 14:22:01 BRT 2021 até: Mon Aug 07 14:22:01 BRT 2051
+Fingerprints do certificado:
+         SHA1: 3A:AD:DB:A7:FA:90:83:42:CC:8E:53:74:78:B6:B1:0E:89:E5:CC:8B
+         SHA256: 3E:3A:AE:32:13:1C:83:25:3A:95:39:E2:8B:2B:9D:A0:A6:5B:38:E5:84:E3:4C:21:58:E0:D2:16:88:1F:E1:26
+Nome do algoritmo de assinatura: SHA256withRSA
+Algoritmo de Chave Pública do Assunto: Chave RSA de 2048 bits
+Versão: 3
+
+Extensões:
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: B6 CB 56 4A 99 84 65 07   4A 2D E3 A4 B3 2C 4E 0E  ..VJ..e.J-...,N.
+0010: A6 A4 D2 DF                                        ....
+]
+]
+
+
+C:\Program Files\Java\jdk1.8.0_301\bin>

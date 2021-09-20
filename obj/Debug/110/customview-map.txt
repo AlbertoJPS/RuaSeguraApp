@@ -23,12 +23,13 @@ item;obj\Debug\110\res\menu\nav_menu.xml
 item;obj\Debug\110\res\values\styles.xml
 layer-list;obj\Debug\110\res\drawable\splash_screen.xml
 LinearLayout;obj\Debug\110\res\layout\activity_main.xml
-LinearLayout;obj\Debug\110\res\layout\splash_screen.xml
 menu;obj\Debug\110\res\menu\nav_menu.xml
 paths;C:\RuaSeguraApp\obj\Debug\110\lp\40\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+resources;C:\RuaSeguraApp\obj\Debug\110\googsvcsjson\values\goog_svcs_json.xml
 resources;obj\Debug\110\res\values\colors.xml
 resources;obj\Debug\110\res\values\strings.xml
 resources;obj\Debug\110\res\values\styles.xml
+string;C:\RuaSeguraApp\obj\Debug\110\googsvcsjson\values\goog_svcs_json.xml
 string;obj\Debug\110\res\values\strings.xml
 style;obj\Debug\110\res\values\styles.xml
 TextView;obj\Debug\110\res\layout\headerlayout.xml
