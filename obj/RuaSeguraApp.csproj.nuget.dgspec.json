@@ -40,6 +40,10 @@
       "frameworks": {
         "monoandroid11.0": {
           "dependencies": {
+            "FirebaseAdmin": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.1, )"
@@ -59,6 +63,14 @@
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.7.0, )"
+            },
+            "Xamarin.Firebase.Common": {
+              "target": "Package",
+              "version": "[120.0.0, )"
+            },
+            "Xamarin.Firebase.Database": {
+              "target": "Package",
+              "version": "[119.7.0, )"
             },
             "Xamarin.Google.Android.Material": {
               "target": "Package",

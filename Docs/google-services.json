@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "376635472650",
+    "project_id": "ruasegura-326520",
+    "storage_bucket": "ruasegura-326520.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:376635472650:android:db1833987f7b3564c818f3",
+        "android_client_info": {
+          "package_name": "com.wnix.ruaseguraapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtQplmtZ5jh8aKAb8wE_lEH3Yx8yI8N8c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

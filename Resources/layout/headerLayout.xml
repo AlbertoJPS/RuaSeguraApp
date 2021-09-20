@@ -5,6 +5,7 @@
     android:layout_height="200dp"
     android:background="@color/colorPrimary"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    <!--Theme.AppCompat.Light.DarkActionBar-->
 
     <ImageView
         android:id="@+id/accountImage"
