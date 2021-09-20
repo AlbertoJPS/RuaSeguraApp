@@ -12,6 +12,7 @@ namespace RuaSeguraApp
         {
             base.OnCreate(savedInstanceState);
 
+
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             //Xamarin.FormsGoogleMaps.Init(this, savedInstanceState); // inicia o Xamarin.Forms.GoogleMaps
 

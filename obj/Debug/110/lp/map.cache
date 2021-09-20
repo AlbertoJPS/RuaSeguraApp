@@ -39,6 +39,12 @@ Xamarin.AndroidX.VersionedParcelable.dll
 Xamarin.AndroidX.ViewPager.dll
 Xamarin.AndroidX.ViewPager2.dll
 Xamarin.Essentials.dll
+Xamarin.Firebase.Annotations.dll
+Xamarin.Firebase.Auth.Interop.dll
+Xamarin.Firebase.Common.dll
+Xamarin.Firebase.Components.dll
+Xamarin.Firebase.Database.Collection.dll
+Xamarin.Firebase.Database.dll
 Xamarin.Google.Android.Material.dll
 Xamarin.Google.Guava.ListenableFuture.dll
 Xamarin.GooglePlayServices.Base.dll
@@ -84,3 +90,8 @@ playservicesbasement-17.6.0.aar
 playservicestasks-17.2.1.aar
 playservicesbase-17.6.0.aar
 playservicesmaps-17.0.1.aar
+firebasedatabasecollection-17.0.1.aar
+firebasecomponents-17.0.0.aar
+firebasecommon-20.0.0.aar
+firebaseauthinterop-19.0.2.aar
+firebasedatabase-19.7.0.aar
