@@ -8,10 +8,10 @@ namespace RuaSeguraApp
     [Activity(Theme = "@style/AppTheme", MainLauncher = false)]
     public class MainActivity : AppCompatActivity
     {
+        
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             //Xamarin.FormsGoogleMaps.Init(this, savedInstanceState); // inicia o Xamarin.Forms.GoogleMaps

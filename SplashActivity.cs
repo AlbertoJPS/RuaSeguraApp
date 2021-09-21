@@ -21,11 +21,11 @@ namespace RuaSeguraApp
     public class SplashActivity : AppCompatActivity
     {
         FirebaseDatabase database;
-
+        Button testbutton;
         protected override void OnCreate(Bundle savedInstanceState)
         {
-
-            FirebaseAdmin.FirebaseApp.Create(new AppOptions() { Credential = GoogleCredential.GetApplicationDefault(), ProjectId = "<ruasegura-326520>", });
+            //sdk firebase admin
+            //FirebaseAdmin.FirebaseApp.Create(new AppOptions() { Credential = GoogleCredential.GetApplicationDefault(), ProjectId = "<ruasegura-326520>", });
 
             base.OnCreate(savedInstanceState);
             
@@ -62,6 +62,10 @@ namespace RuaSeguraApp
 
 
             //Toast.MakeText(this, "Completed", ToastLength.Short).Show();
+        }
+        private void Testbutton_Click(object sender, System.EventArgs e)
+        {
+            Initializedatabase();
         }
 
     }
