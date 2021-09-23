@@ -20,6 +20,27 @@ namespace RuaSeguraApp
             SetContentView(Resource.Layout.activity_main);
 
         }
+<<<<<<< Updated upstream
+=======
+        void Initializedatabase()
+        {
+            // ainda testando implementação para modelo NoSQL de coleções //
+            //FirebaseFirestore.Instance.Collection("Teste").Document("teste1").Set({ "nome":"caneta" })
+                //.document("teste1")
+                //    .setData(
+                //       {
+                //          "nome":"caneta",
+                //          "preco":3.45,
+                //          "ativo":true
+                //       }
+                //    );
+
+        }
+        private void Testbutton_Click(object sender, System.EventArgs e)
+        {
+            Initializedatabase();
+        }
+>>>>>>> Stashed changes
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
