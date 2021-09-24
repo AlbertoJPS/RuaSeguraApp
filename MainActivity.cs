@@ -6,15 +6,40 @@ using AndroidX.AppCompat.App;
 using Firebase;
 using Firebase.Database;
 using Firebase.Firestore;
+using Java.Util;
 
 namespace RuaSeguraApp
 {
     [Activity(Theme = "@style/AppTheme", MainLauncher = false)]
     public class MainActivity : AppCompatActivity
     {
-        FirebaseDatabase database;
-        Button testbutton;
+        FirebaseFirestore database;
+        EditText origem;
+        EditText destino;
+        Button testButton;
 
+        void ConnectViews()
+        {
+            origem = (EditText)FindViewById(Resource.Id.origem);
+            destino = (EditText)FindViewById(Resource.Id.destino);
+            testButton = (Button)FindViewById(Resource.Id.testbutton);
+        }
+        public FirebaseFirestore GetDatabase()
+        {
+            FirebaseFirestore database;
+            var options = new FirebaseOptions.Builder()
+                .SetProjectId("ruasegura-327016")
+                .SetApplicationId("ruasegura-327016")
+                .SetApiKey("AIzaSyCWhpcXIrdkrn5vxh1EWzsOVr494ulsrcI")
+                .SetDatabaseUrl("https://ruasegura-327016.firebaseio.com")
+                .SetStorageBucket("ruasegura-327016.appspot.com")
+                .Build();
+
+            var app = FirebaseApp.InitializeApp(this, options);
+            database = FirebaseFirestore.GetInstance(app);
+
+            return database;
+        }
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -24,25 +49,19 @@ namespace RuaSeguraApp
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
+            ConnectViews();
+            database = GetDatabase();
 
         }
-        void Initializedatabase()
-        {
-            // ainda testando implementação para modelo NoSQL de coleções
-            //FirebaseFirestore.Instance.Collection("Teste").Document("teste1").Set({ "nome":"caneta" })
-                //.document("teste1")
-                //    .setData(
-                //       {
-                //          "nome":"caneta",
-                //          "preco":3.45,
-                //          "ativo":true
-                //       }
-                //    );
-
-        }
+       
         private void Testbutton_Click(object sender, System.EventArgs e)
         {
-            Initializedatabase();
+            HashMap doc = new HashMap();
+            doc.Put("origem", origem.Text);
+            doc.Put("destino", destino.Text);
+
+            DocumentReference docRef = database.Collection("Histórico de Rotas").Document();
+            docRef.Set(doc);
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
@@ -51,33 +70,3 @@ namespace RuaSeguraApp
         }
     }
 }
-
-
-//savedInstanceState.collection("Teste")
-//
-
-//var app = Firebase.FirebaseApp.InitializeApp(this);
-
-//if (app == null)
-//{
-//    var options = new FirebaseOptions.Builder()
-
-//    .SetApplicationId("ruasegura-326520")
-//    .SetApiKey("AIzaSyAtQplmtZ5jh8aKAb8wE_lEH3Yx8yI8N8c")
-//    .SetDatabaseUrl("https://ruasegura-326520.firebaseio.com")
-//    .SetStorageBucket("ruasegura-326520.appspot.com")
-//    .Build();
-
-//    app = Firebase.FirebaseApp.InitializeApp(this, options);
-//    database = FirebaseDatabase.GetInstance(app);
-//}
-//else
-//{
-//    database = FirebaseDatabase.GetInstance(app);
-//}
-
-//DatabaseReference dbref = database.GetReference("UserSupport");
-//dbref.SetValue("Ticketl");
-
-
-//Toast.MakeText(this, "Completed", ToastLength.Short).Show();

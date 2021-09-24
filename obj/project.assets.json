@@ -2,20 +2,6 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v11.0": {
-      "FirebaseAdmin/2.2.0": {
-        "type": "package",
-        "dependencies": {
-          "Google.Api.Gax.Rest": "3.2.0",
-          "Google.Apis.Auth": "1.49.0",
-          "System.Collections.Immutable": "1.7.1"
-        },
-        "compile": {
-          "lib/netstandard2.0/FirebaseAdmin.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/FirebaseAdmin.dll": {}
-        }
-      },
       "Google.Api.CommonProtos/2.3.0": {
         "type": "package",
         "dependencies": {
@@ -28,7 +14,7 @@
           "lib/netstandard2.0/Google.Api.CommonProtos.dll": {}
         }
       },
-      "Google.Api.Gax/3.5.0": {
+      "Google.Api.Gax/3.3.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "1.0.0",
@@ -41,14 +27,14 @@
           "lib/netstandard2.0/Google.Api.Gax.dll": {}
         }
       },
-      "Google.Api.Gax.Grpc/3.5.0": {
+      "Google.Api.Gax.Grpc/3.3.0": {
         "type": "package",
         "dependencies": {
           "Google.Api.CommonProtos": "2.3.0",
-          "Google.Api.Gax": "3.5.0",
-          "Google.Apis.Auth": "[1.53.0, 2.0.0)",
-          "Grpc.Auth": "[2.38.0, 3.0.0)",
-          "Grpc.Core.Api": "[2.38.0, 3.0.0)"
+          "Google.Api.Gax": "3.3.0",
+          "Google.Apis.Auth": "[1.48.0, 2.0.0)",
+          "Grpc.Auth": "[2.36.4, 3.0.0)",
+          "Grpc.Core.Api": "[2.36.4, 3.0.0)"
         },
         "compile": {
           "lib/netstandard2.0/Google.Api.Gax.Grpc.dll": {}
@@ -57,11 +43,11 @@
           "lib/netstandard2.0/Google.Api.Gax.Grpc.dll": {}
         }
       },
-      "Google.Api.Gax.Grpc.GrpcCore/3.5.0": {
+      "Google.Api.Gax.Grpc.GrpcCore/3.3.0": {
         "type": "package",
         "dependencies": {
-          "Google.Api.Gax.Grpc": "3.5.0",
-          "Grpc.Core": "[2.38.0, 3.0.0)"
+          "Google.Api.Gax.Grpc": "3.3.0",
+          "Grpc.Core": "[2.36.4, 3.0.0)"
         },
         "compile": {
           "lib/netstandard2.0/Google.Api.Gax.Grpc.GrpcCore.dll": {}
@@ -70,23 +56,10 @@
           "lib/netstandard2.0/Google.Api.Gax.Grpc.GrpcCore.dll": {}
         }
       },
-      "Google.Api.Gax.Rest/3.2.0": {
+      "Google.Apis/1.48.0": {
         "type": "package",
         "dependencies": {
-          "Google.Api.Gax": "3.2.0",
-          "Google.Apis.Auth": "[1.48.0, 2.0.0)"
-        },
-        "compile": {
-          "lib/netstandard2.0/Google.Api.Gax.Rest.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Google.Api.Gax.Rest.dll": {}
-        }
-      },
-      "Google.Apis/1.53.0": {
-        "type": "package",
-        "dependencies": {
-          "Google.Apis.Core": "1.53.0"
+          "Google.Apis.Core": "1.48.0"
         },
         "compile": {
           "lib/netstandard2.0/Google.Apis.dll": {}
@@ -95,11 +68,11 @@
           "lib/netstandard2.0/Google.Apis.dll": {}
         }
       },
-      "Google.Apis.Auth/1.53.0": {
+      "Google.Apis.Auth/1.48.0": {
         "type": "package",
         "dependencies": {
-          "Google.Apis": "1.53.0",
-          "Google.Apis.Core": "1.53.0"
+          "Google.Apis": "1.48.0",
+          "Google.Apis.Core": "1.48.0"
         },
         "compile": {
           "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll": {},
@@ -110,7 +83,7 @@
           "lib/netstandard2.0/Google.Apis.Auth.dll": {}
         }
       },
-      "Google.Apis.Core/1.53.0": {
+      "Google.Apis.Core/1.48.0": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "12.0.3"
@@ -137,12 +110,12 @@
           "lib/netstandard2.0/Google.Cloud.Firestore.dll": {}
         }
       },
-      "Google.Cloud.Firestore.V1/2.4.0": {
+      "Google.Cloud.Firestore.V1/2.3.0": {
         "type": "package",
         "dependencies": {
-          "Google.Api.Gax.Grpc.GrpcCore": "[3.5.0, 4.0.0)",
-          "Google.LongRunning": "[2.2.0, 3.0.0)",
-          "Grpc.Core": "[2.38.1, 3.0.0)"
+          "Google.Api.Gax.Grpc.GrpcCore": "[3.3.0, 4.0.0)",
+          "Google.LongRunning": "[2.1.0, 3.0.0)",
+          "Grpc.Core": "[2.36.4, 3.0.0)"
         },
         "compile": {
           "lib/netstandard2.0/Google.Cloud.Firestore.V1.dll": {}
@@ -151,11 +124,11 @@
           "lib/netstandard2.0/Google.Cloud.Firestore.V1.dll": {}
         }
       },
-      "Google.LongRunning/2.2.0": {
+      "Google.LongRunning/2.1.0": {
         "type": "package",
         "dependencies": {
-          "Google.Api.Gax.Grpc.GrpcCore": "[3.3.0, 4.0.0)",
-          "Grpc.Core": "[2.36.4, 3.0.0)"
+          "Google.Api.Gax.Grpc.GrpcCore": "[3.2.0, 4.0.0)",
+          "Grpc.Core": "[2.31.0, 3.0.0)"
         },
         "compile": {
           "lib/netstandard2.0/Google.LongRunning.dll": {}
@@ -177,11 +150,11 @@
           "lib/netstandard2.0/Google.Protobuf.dll": {}
         }
       },
-      "Grpc.Auth/2.38.0": {
+      "Grpc.Auth/2.36.4": {
         "type": "package",
         "dependencies": {
           "Google.Apis.Auth": "1.46.0",
-          "Grpc.Core.Api": "2.38.0"
+          "Grpc.Core.Api": "2.36.4"
         },
         "compile": {
           "lib/netstandard2.0/Grpc.Auth.dll": {}
@@ -190,10 +163,10 @@
           "lib/netstandard2.0/Grpc.Auth.dll": {}
         }
       },
-      "Grpc.Core/2.38.1": {
+      "Grpc.Core/2.36.4": {
         "type": "package",
         "dependencies": {
-          "Grpc.Core.Api": "2.38.1",
+          "Grpc.Core.Api": "2.36.4",
           "System.Memory": "4.5.3"
         },
         "compile": {
@@ -203,10 +176,6 @@
           "lib/netstandard2.0/Grpc.Core.dll": {}
         },
         "runtimeTargets": {
-          "runtimes/linux-arm64/native/libgrpc_csharp_ext.arm64.so": {
-            "assetType": "native",
-            "rid": "linux-arm64"
-          },
           "runtimes/linux-x64/native/libgrpc_csharp_ext.x64.so": {
             "assetType": "native",
             "rid": "linux-x64"
@@ -225,7 +194,7 @@
           }
         }
       },
-      "Grpc.Core.Api/2.38.1": {
+      "Grpc.Core.Api/2.36.4": {
         "type": "package",
         "dependencies": {
           "System.Memory": "4.5.3"
@@ -291,7 +260,7 @@
           "lib/netstandard2.0/System.Buffers.dll": {}
         }
       },
-      "System.Collections.Immutable/1.7.1": {
+      "System.Collections.Immutable/1.4.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/System.Collections.Immutable.dll": {}
@@ -1522,32 +1491,6 @@
           "build/MonoAndroid90/Xamarin.Firebase.Components.targets": {}
         }
       },
-      "Xamarin.Firebase.Database/119.7.0": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.AndroidX.Annotation": "1.2.0",
-          "Xamarin.Build.Download": "0.10.0",
-          "Xamarin.Firebase.Auth.Interop": "119.0.2",
-          "Xamarin.Firebase.Common": "119.5.0",
-          "Xamarin.Firebase.Components": "116.1.0",
-          "Xamarin.Firebase.Database.Collection": "117.0.1",
-          "Xamarin.GooglePlayServices.Base": "117.6.0",
-          "Xamarin.GooglePlayServices.Basement": "117.6.0",
-          "Xamarin.GooglePlayServices.Tasks": "117.2.1"
-        },
-        "frameworkAssemblies": [
-          "Java.Interop"
-        ],
-        "compile": {
-          "lib/monoandroid90/Xamarin.Firebase.Database.dll": {}
-        },
-        "runtime": {
-          "lib/monoandroid90/Xamarin.Firebase.Database.dll": {}
-        },
-        "build": {
-          "build/MonoAndroid90/Xamarin.Firebase.Database.targets": {}
-        }
-      },
       "Xamarin.Firebase.Database.Collection/118.0.0": {
         "type": "package",
         "dependencies": {
@@ -1664,11 +1607,11 @@
           "buildTransitive/monoandroid90/Xamarin.Google.Android.Material.targets": {}
         }
       },
-      "Xamarin.Google.Guava/28.2.0.1": {
+      "Xamarin.Google.Guava/29.0.0": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Google.Guava.FailureAccess": "1.0.1.3",
-          "Xamarin.Google.Guava.ListenableFuture": "1.0.0.3"
+          "Xamarin.Google.Guava.FailureAccess": "1.0.1.4",
+          "Xamarin.Google.Guava.ListenableFuture": "1.0.0.4"
         },
         "frameworkAssemblies": [
           "Java.Interop",
@@ -1690,7 +1633,7 @@
           "buildTransitive/monoandroid90/Xamarin.Google.Guava.targets": {}
         }
       },
-      "Xamarin.Google.Guava.FailureAccess/1.0.1.3": {
+      "Xamarin.Google.Guava.FailureAccess/1.0.1.4": {
         "type": "package",
         "frameworkAssemblies": [
           "Java.Interop",
@@ -1712,7 +1655,7 @@
           "buildTransitive/monoandroid90/Xamarin.Google.Guava.FailureAccess.targets": {}
         }
       },
-      "Xamarin.Google.Guava.ListenableFuture/1.0.0.3": {
+      "Xamarin.Google.Guava.ListenableFuture/1.0.0.4": {
         "type": "package",
         "frameworkAssemblies": [
           "Java.Interop",
@@ -1981,21 +1924,6 @@
     }
   },
   "libraries": {
-    "FirebaseAdmin/2.2.0": {
-      "sha512": "nF+7Z7kJ2ikjh75vjKkSmuqgI9b0O8Azygu3GMvx3/z3v5dnk5b6O9nL5/WkuCenYDzyz35r85pkN3C9K93+2g==",
-      "type": "package",
-      "path": "firebaseadmin/2.2.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "firebaseadmin.2.2.0.nupkg.sha512",
-        "firebaseadmin.nuspec",
-        "lib/net461/FirebaseAdmin.dll",
-        "lib/net461/FirebaseAdmin.xml",
-        "lib/netstandard2.0/FirebaseAdmin.dll",
-        "lib/netstandard2.0/FirebaseAdmin.xml"
-      ]
-    },
     "Google.Api.CommonProtos/2.3.0": {
       "sha512": "+CKoDb9ZeZGb56MUb6I8hdkUmp2kLCycljv9FWOX5OfJeJ5WW3IaO26hCX1zKsXdxeXU14viC+WEuXhFgk807w==",
       "type": "package",
@@ -2015,16 +1943,16 @@
         "lib/netstandard2.0/Google.Api.CommonProtos.xml"
       ]
     },
-    "Google.Api.Gax/3.5.0": {
-      "sha512": "Kb8inCXQjvMgvfe4XjdFig3v9Jz7QSklnJK1K2IZgtFkemjQon5m29DoeEyurIAbkdtsZTe0bad+Nmoz/5ItPQ==",
+    "Google.Api.Gax/3.3.0": {
+      "sha512": "l23HaRgpvNMIULAWhih11CMukWflA2o4/mourEpB+7tVwheJsF8mWUmtKYcc6U19WagzJFm6Pzm3zAqCxl5k/w==",
       "type": "package",
-      "path": "google.api.gax/3.5.0",
+      "path": "google.api.gax/3.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "NuGetIcon.png",
-        "google.api.gax.3.5.0.nupkg.sha512",
+        "google.api.gax.3.3.0.nupkg.sha512",
         "google.api.gax.nuspec",
         "lib/net461/Google.Api.Gax.dll",
         "lib/net461/Google.Api.Gax.pdb",
@@ -2034,16 +1962,16 @@
         "lib/netstandard2.0/Google.Api.Gax.xml"
       ]
     },
-    "Google.Api.Gax.Grpc/3.5.0": {
-      "sha512": "LrOzGaMS5uUlS0P83GcdsXUstSv705qj0AREH4bQzyCtFRTpNm4eJS9JaB/9BzEAKKK8aXLu+OKWb45wJSjLQg==",
+    "Google.Api.Gax.Grpc/3.3.0": {
+      "sha512": "QeRWGtnqDtu+2ZDejP9UOI4zFW+6zv5DtCFF0RG5fEQ9jKef2zYDR0liINz1s1uU1fA5nKDP0tCoBvmSO2urvQ==",
       "type": "package",
-      "path": "google.api.gax.grpc/3.5.0",
+      "path": "google.api.gax.grpc/3.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "NuGetIcon.png",
-        "google.api.gax.grpc.3.5.0.nupkg.sha512",
+        "google.api.gax.grpc.3.3.0.nupkg.sha512",
         "google.api.gax.grpc.nuspec",
         "lib/net461/Google.Api.Gax.Grpc.dll",
         "lib/net461/Google.Api.Gax.Grpc.pdb",
@@ -2053,16 +1981,16 @@
         "lib/netstandard2.0/Google.Api.Gax.Grpc.xml"
       ]
     },
-    "Google.Api.Gax.Grpc.GrpcCore/3.5.0": {
-      "sha512": "VbvdZFs5Vs+7KSkxu/kGSXDTWMSnH14wY5XNUjPcfxhaB8q0AaIMsbwIoIe4WxHD53Q6Fr2+8eL1suN2yDA4nw==",
+    "Google.Api.Gax.Grpc.GrpcCore/3.3.0": {
+      "sha512": "6OCpi+f+RDIVgeCGicyOeRZUSymcgm+9a5V68m4WzH0IYwyGF9Ssz0PSNZHe+TZ34B3CXg6vEVDjlpmVCyIGWw==",
       "type": "package",
-      "path": "google.api.gax.grpc.grpccore/3.5.0",
+      "path": "google.api.gax.grpc.grpccore/3.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "NuGetIcon.png",
-        "google.api.gax.grpc.grpccore.3.5.0.nupkg.sha512",
+        "google.api.gax.grpc.grpccore.3.3.0.nupkg.sha512",
         "google.api.gax.grpc.grpccore.nuspec",
         "lib/net461/Google.Api.Gax.Grpc.GrpcCore.dll",
         "lib/net461/Google.Api.Gax.Grpc.GrpcCore.pdb",
@@ -2072,35 +2000,16 @@
         "lib/netstandard2.0/Google.Api.Gax.Grpc.GrpcCore.xml"
       ]
     },
-    "Google.Api.Gax.Rest/3.2.0": {
-      "sha512": "YY4mD0nGxTx1uez7Perm+zAd3FH50dd3+7HTYsRFCywDEtj3RkrMjcAmw6mNpKkw2sRICu7aYNy1mgMjd3nVbw==",
+    "Google.Apis/1.48.0": {
+      "sha512": "wnZJKPM7blcDzfTyMQ6kHvvDkd89a3C8m8uzTIJ8vrOdRqSAwHDE9nhht6GtcPe+sSfpuav0dX4RFAz2pKzp8w==",
       "type": "package",
-      "path": "google.api.gax.rest/3.2.0",
+      "path": "google.apis/1.48.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "NuGetIcon.png",
-        "google.api.gax.rest.3.2.0.nupkg.sha512",
-        "google.api.gax.rest.nuspec",
-        "lib/net461/Google.Api.Gax.Rest.dll",
-        "lib/net461/Google.Api.Gax.Rest.pdb",
-        "lib/net461/Google.Api.Gax.Rest.xml",
-        "lib/netstandard2.0/Google.Api.Gax.Rest.dll",
-        "lib/netstandard2.0/Google.Api.Gax.Rest.pdb",
-        "lib/netstandard2.0/Google.Api.Gax.Rest.xml"
-      ]
-    },
-    "Google.Apis/1.53.0": {
-      "sha512": "nLVl91WLUHuU/WVQfGXXf2UcNguTRvVorZujT06q6fjYKk/Q6UJDgEcO5Ti00vdb40sT1GQwnqUpPeSKjLSn2Q==",
-      "type": "package",
-      "path": "google.apis/1.53.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE",
-        "NuGetIcon.png",
-        "google.apis.1.53.0.nupkg.sha512",
+        "google.apis.1.48.0.nupkg.sha512",
         "google.apis.nuspec",
         "lib/net45/Google.Apis.PlatformServices.dll",
         "lib/net45/Google.Apis.dll",
@@ -2114,25 +2023,21 @@
         "lib/netstandard2.0/Google.Apis.xml"
       ]
     },
-    "Google.Apis.Auth/1.53.0": {
-      "sha512": "f8MhaaP9aRoVpybRNfMKzBFrNh/Hw3z1TUBFsWWXYZOgcXFFUuFCFmAxyIjixdYxDG+DCwkoVnf5lSIXEy3QdA==",
+    "Google.Apis.Auth/1.48.0": {
+      "sha512": "OwBOJLMr/4WH3svpoYjOhPu+GYN1N3sEsllBbMHxLYpfCKP13XheifjSnClzXnHuY19tDfN6aEwHpPv5jkG88Q==",
       "type": "package",
-      "path": "google.apis.auth/1.53.0",
+      "path": "google.apis.auth/1.48.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "NuGetIcon.png",
-        "google.apis.auth.1.53.0.nupkg.sha512",
+        "google.apis.auth.1.48.0.nupkg.sha512",
         "google.apis.auth.nuspec",
         "lib/net45/Google.Apis.Auth.PlatformServices.dll",
         "lib/net45/Google.Apis.Auth.dll",
         "lib/net45/Google.Apis.Auth.pdb",
         "lib/net45/Google.Apis.Auth.xml",
-        "lib/net461/Google.Apis.Auth.PlatformServices.dll",
-        "lib/net461/Google.Apis.Auth.dll",
-        "lib/net461/Google.Apis.Auth.pdb",
-        "lib/net461/Google.Apis.Auth.xml",
         "lib/netstandard1.3/Google.Apis.Auth.PlatformServices.dll",
         "lib/netstandard1.3/Google.Apis.Auth.dll",
         "lib/netstandard1.3/Google.Apis.Auth.pdb",
@@ -2143,16 +2048,16 @@
         "lib/netstandard2.0/Google.Apis.Auth.xml"
       ]
     },
-    "Google.Apis.Core/1.53.0": {
-      "sha512": "6pTO2f75pwYag0DenUz4A3fPBi2t8qHhlPAVXP6hsSWU5lP7pPqsxV8Oc2sgcBwVquMIL6DVw23Woc2vC73E9A==",
+    "Google.Apis.Core/1.48.0": {
+      "sha512": "DJ/2eNBneeqEJuTO0ZPNON9DdDMS2JXcHiszZ86MUNqPtQGhB3xbZoGg1p0sOfvGpyyoqsIMNeJXdSWUHB4E5g==",
       "type": "package",
-      "path": "google.apis.core/1.53.0",
+      "path": "google.apis.core/1.48.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "NuGetIcon.png",
-        "google.apis.core.1.53.0.nupkg.sha512",
+        "google.apis.core.1.48.0.nupkg.sha512",
         "google.apis.core.nuspec",
         "lib/net45/Google.Apis.Core.dll",
         "lib/net45/Google.Apis.Core.pdb",
@@ -2184,16 +2089,16 @@
         "lib/netstandard2.0/Google.Cloud.Firestore.xml"
       ]
     },
-    "Google.Cloud.Firestore.V1/2.4.0": {
-      "sha512": "/0KiKzNbTyDNUwCRrK5W4suA44AiP6PJzZJIz+oKypVGjJyIceUrhpSppfcshuk8hJ5N818GS2uRb4yX7pM7DA==",
+    "Google.Cloud.Firestore.V1/2.3.0": {
+      "sha512": "Y8cwDoUSBe6WL7T2bF3lVNDKfeIPs73B0uwTSz304H3mtTVT3IbOa8i+U/VFM6tYWXgz8SIBqKF7N0atweSqFA==",
       "type": "package",
-      "path": "google.cloud.firestore.v1/2.4.0",
+      "path": "google.cloud.firestore.v1/2.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "NuGetIcon.png",
-        "google.cloud.firestore.v1.2.4.0.nupkg.sha512",
+        "google.cloud.firestore.v1.2.3.0.nupkg.sha512",
         "google.cloud.firestore.v1.nuspec",
         "lib/net461/Google.Cloud.Firestore.V1.dll",
         "lib/net461/Google.Cloud.Firestore.V1.pdb",
@@ -2203,16 +2108,16 @@
         "lib/netstandard2.0/Google.Cloud.Firestore.V1.xml"
       ]
     },
-    "Google.LongRunning/2.2.0": {
-      "sha512": "0i8BDoiVNDDaMBvZ/VzYYf8JWNs6L0UuVGkWOJ+W2UXu9N6nbhQpJ5kL+9xflM9xy9h1DdGJK2ydm7eDtA6Sjg==",
+    "Google.LongRunning/2.1.0": {
+      "sha512": "Rq+YbydkwoKcFX3phYbWi9q8Bipiks5ietW9iD6vnQnVhfnowGXkvldqWGJRXT4ZX0VBcj36tZrBLhauHqVLng==",
       "type": "package",
-      "path": "google.longrunning/2.2.0",
+      "path": "google.longrunning/2.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "NuGetIcon.png",
-        "google.longrunning.2.2.0.nupkg.sha512",
+        "google.longrunning.2.1.0.nupkg.sha512",
         "google.longrunning.nuspec",
         "lib/net461/Google.LongRunning.dll",
         "lib/net461/Google.LongRunning.pdb",
@@ -2242,14 +2147,14 @@
         "lib/netstandard2.0/Google.Protobuf.xml"
       ]
     },
-    "Grpc.Auth/2.38.0": {
-      "sha512": "tu/pTqbJ0fnZzbM3TbEL+6MMy24/RxdJAyZYHQvdNATu/MfCbNchjrgRQSptbGSvxrt1zntCpKwZT4QSw7CtYg==",
+    "Grpc.Auth/2.36.4": {
+      "sha512": "fsaTAM/g82Ejn7JXKCu/C5kqD+wIL2UYnfZbNxDZNjRU2DtDkY6/e4visFLSxhUF7XgLjNrGldIy0uzduzXaww==",
       "type": "package",
-      "path": "grpc.auth/2.38.0",
+      "path": "grpc.auth/2.36.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "grpc.auth.2.38.0.nupkg.sha512",
+        "grpc.auth.2.36.4.nupkg.sha512",
         "grpc.auth.nuspec",
         "lib/net45/Grpc.Auth.dll",
         "lib/net45/Grpc.Auth.pdb",
@@ -2262,16 +2167,15 @@
         "lib/netstandard2.0/Grpc.Auth.xml"
       ]
     },
-    "Grpc.Core/2.38.1": {
-      "sha512": "dFgCYVMNaOYiagWJZ7X/1MkGzS7+fnirvqh+0DPw+rPvcEa5UFU7O747wWz+QTKzuZ9Sii7DjfSbgZj65/lWxw==",
+    "Grpc.Core/2.36.4": {
+      "sha512": "kkLT6mA7SkMrIuigwM+r/jh4hRQV90RADLqhKvaMxW4T5I87ZAYRNnw91TnNRQ0nz0LPW4xzUfPc1VP3FWSUTg==",
       "type": "package",
-      "path": "grpc.core/2.38.1",
+      "path": "grpc.core/2.36.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "build/net45/Grpc.Core.targets",
-        "buildTransitive/net45/Grpc.Core.targets",
-        "grpc.core.2.38.1.nupkg.sha512",
+        "grpc.core.2.36.4.nupkg.sha512",
         "grpc.core.nuspec",
         "lib/net45/Grpc.Core.dll",
         "lib/net45/Grpc.Core.pdb",
@@ -2282,21 +2186,20 @@
         "lib/netstandard2.0/Grpc.Core.dll",
         "lib/netstandard2.0/Grpc.Core.pdb",
         "lib/netstandard2.0/Grpc.Core.xml",
-        "runtimes/linux-arm64/native/libgrpc_csharp_ext.arm64.so",
         "runtimes/linux-x64/native/libgrpc_csharp_ext.x64.so",
         "runtimes/osx-x64/native/libgrpc_csharp_ext.x64.dylib",
         "runtimes/win-x64/native/grpc_csharp_ext.x64.dll",
         "runtimes/win-x86/native/grpc_csharp_ext.x86.dll"
       ]
     },
-    "Grpc.Core.Api/2.38.1": {
-      "sha512": "Z7e+LEXDCr2C0qUvyydShgLkuMChdT4biZsCg8xUaENZpO+y5VN4pUzcfj9jYVS8DOi8c/oqjx4WOlBuBKVhEg==",
+    "Grpc.Core.Api/2.36.4": {
+      "sha512": "zarJ2ZCcTSjMb4x0/J+stzyfcysthNZgKRJjuf5qRGUh80x8gOLPZv5R0AZH2bbpVIzxLd4eOc47UEqtOU+eLw==",
       "type": "package",
-      "path": "grpc.core.api/2.38.1",
+      "path": "grpc.core.api/2.36.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "grpc.core.api.2.38.1.nupkg.sha512",
+        "grpc.core.api.2.36.4.nupkg.sha512",
         "grpc.core.api.nuspec",
         "lib/net45/Grpc.Core.Api.dll",
         "lib/net45/Grpc.Core.Api.pdb",
@@ -2409,27 +2312,24 @@
         "version.txt"
       ]
     },
-    "System.Collections.Immutable/1.7.1": {
-      "sha512": "B43Zsz5EfMwyEbnObwRxW5u85fzJma3lrDeGcSAV1qkhSRTNY5uXAByTn9h9ddNdhM+4/YoLc/CI43umjwIl9Q==",
+    "System.Collections.Immutable/1.4.0": {
+      "sha512": "71hw5RUJRu5+q/geUY69gpXD8Upd12cH+F3MwpXV2zle7Bqqkrmc1JblOTuvUcgmdnUtQvBlV5e1d6RH+H2lvA==",
       "type": "package",
-      "path": "system.collections.immutable/1.7.1",
+      "path": "system.collections.immutable/1.4.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/System.Collections.Immutable.dll",
-        "lib/net461/System.Collections.Immutable.xml",
+        "lib/netcoreapp2.0/_._",
         "lib/netstandard1.0/System.Collections.Immutable.dll",
         "lib/netstandard1.0/System.Collections.Immutable.xml",
-        "lib/netstandard1.3/System.Collections.Immutable.dll",
-        "lib/netstandard1.3/System.Collections.Immutable.xml",
         "lib/netstandard2.0/System.Collections.Immutable.dll",
         "lib/netstandard2.0/System.Collections.Immutable.xml",
         "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll",
         "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.xml",
-        "system.collections.immutable.1.7.1.nupkg.sha512",
+        "ref/netcoreapp2.0/_._",
+        "system.collections.immutable.1.4.0.nupkg.sha512",
         "system.collections.immutable.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -3646,21 +3546,6 @@
         "xamarin.firebase.components.nuspec"
       ]
     },
-    "Xamarin.Firebase.Database/119.7.0": {
-      "sha512": "HwAU5RQdKYfLd+CmXE3iligv/8cRtMbgQ5hl+EuoPDRhoxEPkxO2RTZ2w746M29SJ9b1hs2tANTDUk709GxNdA==",
-      "type": "package",
-      "path": "xamarin.firebase.database/119.7.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/MonoAndroid90/Xamarin.Firebase.Database.targets",
-        "lib/monoandroid90/Xamarin.Firebase.Database.dll",
-        "lib/monoandroid90/Xamarin.Firebase.Database.pdb",
-        "proguard/MonoAndroid90/proguard.txt",
-        "xamarin.firebase.database.119.7.0.nupkg.sha512",
-        "xamarin.firebase.database.nuspec"
-      ]
-    },
     "Xamarin.Firebase.Database.Collection/118.0.0": {
       "sha512": "f/vnMQec5GLP+oUwV8pmwZXA15YU5GPD7c9mV27cfKF/vFr+mQceG+9DivA/mSpm38+6oAynsrdtkxkite2vBg==",
       "type": "package",
@@ -3730,66 +3615,66 @@
         "xamarin.google.android.material.nuspec"
       ]
     },
-    "Xamarin.Google.Guava/28.2.0.1": {
-      "sha512": "8G9WAuD34ELhrR9dU6k2yHZAaR2vfiUrgUidBiXtauHAx5TyLdq5dQJXpurN55Chc2tZpN/10TPvJQVzk4/ZuQ==",
+    "Xamarin.Google.Guava/29.0.0": {
+      "sha512": "NUmB2rOu2u+BtA2LPkzqjCtfJ07Le4g5waHnl9lTCcZ3HQXQEffev89mmcKQWITt/ImgIxiSvJco5zGqqF5K7w==",
       "type": "package",
-      "path": "xamarin.google.guava/28.2.0.1",
+      "path": "xamarin.google.guava/29.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "THIRD-PARTY-NOTICES.txt",
         "build/monoandroid90/Xamarin.Google.Guava.targets",
-        "build/net6.0-android30.0/Xamarin.Google.Guava.targets",
+        "build/net6.0-android31.0/Xamarin.Google.Guava.targets",
         "buildTransitive/monoandroid90/Xamarin.Google.Guava.targets",
-        "buildTransitive/net6.0-android30.0/Xamarin.Google.Guava.targets",
+        "buildTransitive/net6.0-android31.0/Xamarin.Google.Guava.targets",
         "jar/guava.jar",
         "lib/monoandroid90/Xamarin.Google.Guava.dll",
         "lib/monoandroid90/Xamarin.Google.Guava.xml",
-        "lib/net6.0-android30.0/Xamarin.Google.Guava.dll",
-        "lib/net6.0-android30.0/Xamarin.Google.Guava.xml",
-        "xamarin.google.guava.28.2.0.1.nupkg.sha512",
+        "lib/net6.0-android31.0/Xamarin.Google.Guava.dll",
+        "lib/net6.0-android31.0/Xamarin.Google.Guava.xml",
+        "xamarin.google.guava.29.0.0.nupkg.sha512",
         "xamarin.google.guava.nuspec"
       ]
     },
-    "Xamarin.Google.Guava.FailureAccess/1.0.1.3": {
-      "sha512": "EzYSFRU4Uu1nt4hbOZbz6It+53o6UzKXNHxbtTyx9ec3ujsqr/wAhTGGkRBMuRka0WYDP9cVp4GpXRiMsLhzPA==",
+    "Xamarin.Google.Guava.FailureAccess/1.0.1.4": {
+      "sha512": "02+0HKEUwhXQSlH//dQXmpn4yhraZxxjPj+rfagwTnc/9hrjeZtdMn6emcgRflG15G39MLP4+DbmHE+f19x0tA==",
       "type": "package",
-      "path": "xamarin.google.guava.failureaccess/1.0.1.3",
+      "path": "xamarin.google.guava.failureaccess/1.0.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "THIRD-PARTY-NOTICES.txt",
         "build/monoandroid90/Xamarin.Google.Guava.FailureAccess.targets",
-        "build/net6.0-android30.0/Xamarin.Google.Guava.FailureAccess.targets",
+        "build/net6.0-android31.0/Xamarin.Google.Guava.FailureAccess.targets",
         "buildTransitive/monoandroid90/Xamarin.Google.Guava.FailureAccess.targets",
-        "buildTransitive/net6.0-android30.0/Xamarin.Google.Guava.FailureAccess.targets",
+        "buildTransitive/net6.0-android31.0/Xamarin.Google.Guava.FailureAccess.targets",
         "jar/guava-failureaccess.jar",
         "lib/monoandroid90/Xamarin.Google.Guava.FailureAccess.dll",
         "lib/monoandroid90/Xamarin.Google.Guava.FailureAccess.xml",
-        "lib/net6.0-android30.0/Xamarin.Google.Guava.FailureAccess.dll",
-        "lib/net6.0-android30.0/Xamarin.Google.Guava.FailureAccess.xml",
-        "xamarin.google.guava.failureaccess.1.0.1.3.nupkg.sha512",
+        "lib/net6.0-android31.0/Xamarin.Google.Guava.FailureAccess.dll",
+        "lib/net6.0-android31.0/Xamarin.Google.Guava.FailureAccess.xml",
+        "xamarin.google.guava.failureaccess.1.0.1.4.nupkg.sha512",
         "xamarin.google.guava.failureaccess.nuspec"
       ]
     },
-    "Xamarin.Google.Guava.ListenableFuture/1.0.0.3": {
-      "sha512": "o/5jRsdvUu9tjUYipngBuMD/85aUty8CLMnEOtSCQX2rS5qsh9axlT/eSp8ChfjHgm1k666BGm/Wc3tPG3B8Qw==",
+    "Xamarin.Google.Guava.ListenableFuture/1.0.0.4": {
+      "sha512": "UR7EejqEUQ3DJQyRpXuUd84HGUCazwjCJOIOzqzY9U7cNNIDRPQ48Nthb5e4bkAuIrZ9F7bHIwqmU4XvzegiPQ==",
       "type": "package",
-      "path": "xamarin.google.guava.listenablefuture/1.0.0.3",
+      "path": "xamarin.google.guava.listenablefuture/1.0.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "THIRD-PARTY-NOTICES.txt",
         "build/monoandroid90/Xamarin.Google.Guava.ListenableFuture.targets",
-        "build/net6.0-android30.0/Xamarin.Google.Guava.ListenableFuture.targets",
+        "build/net6.0-android31.0/Xamarin.Google.Guava.ListenableFuture.targets",
         "buildTransitive/monoandroid90/Xamarin.Google.Guava.ListenableFuture.targets",
-        "buildTransitive/net6.0-android30.0/Xamarin.Google.Guava.ListenableFuture.targets",
+        "buildTransitive/net6.0-android31.0/Xamarin.Google.Guava.ListenableFuture.targets",
         "jar/guava-listenablefuture.jar",
         "lib/monoandroid90/Xamarin.Google.Guava.ListenableFuture.dll",
         "lib/monoandroid90/Xamarin.Google.Guava.ListenableFuture.xml",
-        "lib/net6.0-android30.0/Xamarin.Google.Guava.ListenableFuture.dll",
-        "lib/net6.0-android30.0/Xamarin.Google.Guava.ListenableFuture.xml",
-        "xamarin.google.guava.listenablefuture.1.0.0.3.nupkg.sha512",
+        "lib/net6.0-android31.0/Xamarin.Google.Guava.ListenableFuture.dll",
+        "lib/net6.0-android31.0/Xamarin.Google.Guava.ListenableFuture.xml",
+        "xamarin.google.guava.listenablefuture.1.0.0.4.nupkg.sha512",
         "xamarin.google.guava.listenablefuture.nuspec"
       ]
     },
@@ -3989,18 +3874,15 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v11.0": [
-      "FirebaseAdmin >= 2.2.0",
       "Google.Cloud.Firestore >= 2.4.0",
-      "Google.Cloud.Firestore.V1 >= 2.4.0",
       "Newtonsoft.Json >= 13.0.1",
       "Xamarin.AndroidX.Activity >= 1.3.1",
       "Xamarin.AndroidX.AppCompat >= 1.3.1.1",
       "Xamarin.AndroidX.Migration >= 1.0.8",
       "Xamarin.Essentials >= 1.7.0",
-      "Xamarin.Firebase.Common >= 120.0.0",
-      "Xamarin.Firebase.Database >= 119.7.0",
       "Xamarin.Firebase.Firestore >= 123.0.3",
       "Xamarin.Google.Android.Material >= 1.4.0.2",
+      "Xamarin.Google.Guava >= 29.0.0",
       "Xamarin.GooglePlayServices.Base >= 117.6.0",
       "Xamarin.GooglePlayServices.Maps >= 117.0.1"
     ]
@@ -4046,15 +3928,7 @@
     "frameworks": {
       "monoandroid11.0": {
         "dependencies": {
-          "FirebaseAdmin": {
-            "target": "Package",
-            "version": "[2.2.0, )"
-          },
           "Google.Cloud.Firestore": {
-            "target": "Package",
-            "version": "[2.4.0, )"
-          },
-          "Google.Cloud.Firestore.V1": {
             "target": "Package",
             "version": "[2.4.0, )"
           },
@@ -4078,14 +3952,6 @@
             "target": "Package",
             "version": "[1.7.0, )"
           },
-          "Xamarin.Firebase.Common": {
-            "target": "Package",
-            "version": "[120.0.0, )"
-          },
-          "Xamarin.Firebase.Database": {
-            "target": "Package",
-            "version": "[119.7.0, )"
-          },
           "Xamarin.Firebase.Firestore": {
             "target": "Package",
             "version": "[123.0.3, )"
@@ -4093,6 +3959,10 @@
           "Xamarin.Google.Android.Material": {
             "target": "Package",
             "version": "[1.4.0.2, )"
+          },
+          "Xamarin.Google.Guava": {
+            "target": "Package",
+            "version": "[29.0.0, )"
           },
           "Xamarin.GooglePlayServices.Base": {
             "target": "Package",
