@@ -40,15 +40,7 @@
       "frameworks": {
         "monoandroid11.0": {
           "dependencies": {
-            "FirebaseAdmin": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
             "Google.Cloud.Firestore": {
-              "target": "Package",
-              "version": "[2.4.0, )"
-            },
-            "Google.Cloud.Firestore.V1": {
               "target": "Package",
               "version": "[2.4.0, )"
             },
@@ -72,14 +64,6 @@
               "target": "Package",
               "version": "[1.7.0, )"
             },
-            "Xamarin.Firebase.Common": {
-              "target": "Package",
-              "version": "[120.0.0, )"
-            },
-            "Xamarin.Firebase.Database": {
-              "target": "Package",
-              "version": "[119.7.0, )"
-            },
             "Xamarin.Firebase.Firestore": {
               "target": "Package",
               "version": "[123.0.3, )"
@@ -87,6 +71,10 @@
             "Xamarin.Google.Android.Material": {
               "target": "Package",
               "version": "[1.4.0.2, )"
+            },
+            "Xamarin.Google.Guava": {
+              "target": "Package",
+              "version": "[29.0.0, )"
             },
             "Xamarin.GooglePlayServices.Base": {
               "target": "Package",
