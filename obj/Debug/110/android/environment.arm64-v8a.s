@@ -3,8 +3,8 @@
 	.section	.rodata.env.str.1,"aMS",@progbits,1
 	.type	.L.env.str.1, @object
 .L.env.str.1:
-	.asciz	"com.wnix.ruaseguraapp"
-	.size	.L.env.str.1, 22
+	.asciz	"com.pathtech.ruaseguraapp"
+	.size	.L.env.str.1, 26
 	.section	.data.application_config,"aw",@progbits
 	.type	application_config, @object
 	.p2align	3
@@ -73,7 +73,7 @@ mono_aot_mode_name:
 	.section	.rodata.env.str.8,"aMS",@progbits,1
 	.type	.L.env.str.8, @object
 .L.env.str.8:
-	.asciz	"6c624dd1-58b0-48e2-95a0-2b2c9320fca4"
+	.asciz	"ba21b0c8-b06e-4830-b1d4-00e8079acdb6"
 	.size	.L.env.str.8, 37
 	.section	.rodata.env.str.9,"aMS",@progbits,1
 	.type	.L.env.str.9, @object
