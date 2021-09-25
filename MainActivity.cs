@@ -23,6 +23,17 @@ namespace RuaSeguraApp
             origem = (EditText)FindViewById(Resource.Id.origem);
             destino = (EditText)FindViewById(Resource.Id.destino);
             testButton = (Button)FindViewById(Resource.Id.testbutton);
+
+            testButton.Click += TestButton_Click;
+        }
+        private void TestButton_Click(object sender, System.EventArgs e)
+        {
+            HashMap doc = new HashMap();
+            doc.Put("origem", origem.Text);
+            doc.Put("destino", destino.Text);
+
+            DocumentReference docRef = database.Collection("testRotas").Document();
+            docRef.Set(doc);
         }
         public FirebaseFirestore GetDatabase()
         {
@@ -43,7 +54,6 @@ namespace RuaSeguraApp
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             //Xamarin.FormsGoogleMaps.Init(this, savedInstanceState); // inicia o Xamarin.Forms.GoogleMaps
 
@@ -52,16 +62,6 @@ namespace RuaSeguraApp
             ConnectViews();
             database = GetDatabase();
 
-        }
-       
-        private void Testbutton_Click(object sender, System.EventArgs e)
-        {
-            HashMap doc = new HashMap();
-            doc.Put("origem", origem.Text);
-            doc.Put("destino", destino.Text);
-
-            DocumentReference docRef = database.Collection("Histórico de Rotas").Document();
-            docRef.Set(doc);
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
